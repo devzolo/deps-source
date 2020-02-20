@@ -6,7 +6,7 @@
   "author": "Raphael-ZoLo <zolotorevsky@gmail.com>",
   "license": "MIT",
   "bin": {
-    "deps-source": "index.js"
+    "deps-source": "./dist/index.js"
   },
   "devDependencies": {
     "@types/jest": "^25.1.2",
@@ -25,6 +25,11 @@
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
   },
+  "deps": {
+    "freeglut-3.2.1": {
+      "url": "https://razaoinfo.dl.sourceforge.net/project/freeglut/freeglut/3.2.1/freeglut-3.2.1.tar.gz"
+    }
+  },
   "scripts": {
     "dev": "nodemon",
     "start": "ts-node src",
@@ -34,11 +39,18 @@
     "test": "jest --coverage"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "chalk": "^3.0.0",
+    "cli-progress": "^3.6.0",
     "cli-table": "^0.3.1",
+    "colors": "^1.4.0",
     "commander": "^4.1.1",
     "figlet": "^1.2.4",
     "inquirer": "^7.0.4",
-    "shelljs": "^0.8.3"
+    "log-symbols": "^3.0.0",
+    "onezip": "^4.0.2",
+    "shelljs": "^0.8.3",
+    "tar-fs": "^2.0.0",
+    "tar-stream": "^2.1.0"
   }
 }
